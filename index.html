@@ -86,6 +86,8 @@
     ### Take pictures in a remote area without network coverage
 
     Jenna is hiking in a remote area without network coverage. She takes high quality pictures using a web application. She decides to apply post-process some of the pictures she took by applying ready-made filters. The pictures are stored locally. When she returns to an area with better network coverage, her pictures are updated to a remote server. While the upload is going on in the background she can continue taking pictures or can browse her previous shots to select the ones she wants to share with her friends.
+    
+    Derived requirements: <a href="#camera-access" class="reqRef"></a>, <a href="#pic-manipulation" class="reqRef"></a>, <a href="#pic-manipulation" class="reqRef"></a>, <a href="#pic-upload" class="reqRef"></a>.
 
     Requirements
     ------------
@@ -94,24 +96,14 @@
 
     ### Taking pictures
     
-    #### Accessing the device's camera
+    <p id="camera-access" class=req>It MUST be possible to take pictures using the device's camera. This MUST be done in such a way that the user's security and privacy is respected.</p>
     
-    It MUST be possible to take pictures using the device's camera. This must be done in such a way that the user's security and privacy is respected.
+    <p id="pic-manipulation" class=req>It MUST be possible to programmatically manipulate a picture so as to crop it, apply filters to it, etc. and save the result of these manipulations.</p>
     
-    #### Accessing pixel data
+    <p id="pic-storage" class=req>It MUST be possible to store pictures locally and retrieve them without requiring further permission from the user.</p>
     
-    It MUST be possible to access picture's pixel data to programmatically modify the picture (by cropping it, applying filters, etc.).
-    
-    Conversely, it MUST be possible to transform back that pixel data into a format which can be stored or uploaded to a remote server.
-    
-    #### Storing pictures locally
-    
-    It MUST be possible to store pictures locally and retrieve them without requiring further permission from the user.
-    
-    #### Uploading pictures
-    
-    It MUST be possible to asynchronously upload pictures to remote server on different origins. Ideally, uploads should continue even if the user navigates to a different page.
-    
+    <p id="pic-upload" class=req>It MUST be possible to asynchronously upload pictures to remote server on different origins. Ideally, uploads should continue even if the user navigates to a different page.</p>
+
     #### Out of Scope
     
     Direct access to multimedia streams are out of the scope of this document.
