@@ -5,7 +5,7 @@ Please send comments to [public-coremob@w3.org](mailto:public-coremob@w3.org?sub
 Editing this document
 ---------------------
 
-This document is developed using a modified version of [ReSpec][respec] which handles [Markdown syntax][md]. The only thing you need to get start is a browser and a text editor. Make your changes to the `index.html` file and drag it into a browser, ReSpec will compile it into a properly formatted doc on the fly.
+This document is developed using [ReSpec][respec] which now handles [Markdown syntax][md]. The only thing you need to get start is a browser and a text editor. Make your changes to the `index.html` file and drag it into a browser, ReSpec will compile it into a properly formatted doc on the fly.
 
 ### Using GitHub
 
