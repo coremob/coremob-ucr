@@ -93,8 +93,6 @@
     ------------
 
     The following requirements are derived from the above use cases and scenarios.
-
-    ### Taking pictures
     
     <p id="camera-access" class=req>It MUST be possible to take pictures using the device's camera. This MUST be done in such a way that the user's security and privacy is respected.</p>
     
@@ -103,49 +101,26 @@
     <p id="pic-storage" class=req>It MUST be possible to store pictures locally and retrieve them without requiring further permission from the user.</p>
     
     <p id="pic-upload" class=req>It MUST be possible to asynchronously upload pictures to remote server on different origins. Ideally, uploads should continue even if the user navigates to a different page.</p>
-
-    #### Out of Scope
+    
+    <p id="orientation-lock" class=req>A web application might be designed to be used strictly in portrait or landscape mode. It MUST be possible to signal this preference to the User Agent.</p>
+    
+    <p id="fullscreen" class=req>It MUST be possible for an application to signal to the User Agent that it wants to operate fullscreen and not inside of the browser's chrome.</p>
+    
+    <p id="geolocation" class=req>It MUST be possible to obtain the device's current geographic coordinates provided the user consents to sharing those.</p>
+    
+    <p id="position" class=req>It MUST be possible to register to receive updates when the position of the device changes.</p>
+    
+    <p id="framerate" class=req>It MUST be able to run a canvas tag at 30FPS in fullscreen mode.</p>
+    
+    <p id="audio-playback" class=req>Multiple sound files MUST be able to play simultaneously with minimal latency.</p>
+    
+    <p id="data-storage" class=req>It MUST be possible to asynchronously store and retrieve large, structured persistent data sets.</p>
+    
+    ### Out of Scope
     
     Direct access to multimedia streams are out of the scope of this document.
     
-    ### Locking the orientation of the device
-    
-    #### Locking orientation
-    
-    A web application might be designed to be used strictly in portrait or landscape mode. It MUST be possible to signal this preference to the User Agent.
-    
-    #### Out of Scope
-    
     Programatic locking and/or unlocking of the device's orientation are out of scope.
     
-    ### Running an application in full-screen mode
-    
-    It MUST be possible for an application to signal to the User Agent that it wants to operate fullscreen and not inside of the browser's chrome.
-
-    ### Geo-localization
-    
-    #### Finding the device's current position
-    
-    It MUST be possible to obtain the device's current geographic coordinates provided the user consents to sharing those.
-
-    #### Responding to position change
-    
-    It MUST be possible to register to receive updates when the position of the device changes.
-    
-    ### Building 2D and isometric games
-    
-    #### Sufficient frame rate.
-    
-    It MUST be able to run a canvas tag at 30FPS in fullscreen mode.
-    
-    #### Audio playback
-    
-    Multiple sound files MUST be able to play simultaneously with minimal latency.
-    
-    #### Data sets
-    
-    It MUST be possible to store large, structured persistent data sets.
-    
-    This data MUST be available asynchronously.
   </body>
 </html>
